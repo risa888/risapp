@@ -30,15 +30,7 @@ class PostViewSet(ModelViewSet):
         
         author = self.request.user
 
-        # review_queryset = Review.objects.filter(ebook=ebook,
-        #                                         review_author=review_author)
-
-        # if review_queryset.exists():
-        #     raise ValidationError("You Have Already Reviewed this Ebook!")
-
-        # serializer.save(ebook=ebook, review_author=review_author)
-        
-
+       
     
 
 class CommentsViewSet(ModelViewSet):
@@ -46,5 +38,8 @@ class CommentsViewSet(ModelViewSet):
     queryset = Comments.objects.all()
     serializer_class = CommentsSerializer
     permission_classes = [IsAuthenticated]
+
+    
+class TagsViewSet(mixins.ListModelMixin):
 
     

@@ -1,0 +1,19 @@
+{% extends 'risapp/base.html' %}
+
+{% block content %}
+
+<ul>
+   <li>
+       {{ caption }}
+    </li>
+    <li>
+        {{ created_date}}
+    </li>
+    <li>
+       <img src='{{ photo.url }}'>
+    </li>
+    <li>
+        {{ tag_name}}
+    </li>
+    {% endblock %}
+</ul>

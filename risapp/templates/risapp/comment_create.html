@@ -1,0 +1,14 @@
+{% extends 'risapp/base.html' %}
+
+{% block header %}
+{{ user }}
+{{ comment }}
+{{ posted_date}}
+
+{% endblock %}
+{% block content %}
+<form method='POST'> {% csrf_token %}
+{{ com_form.as_p }}
+<input type='Submit' value='Save' />
+</form>
+{% endblock %}

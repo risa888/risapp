@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ object.name }}</title>
+</head>
+<body>
+    <p>Product: {{ object.name }}</p>
+    <p>Menu: {{ object.menu }}</p>
+    <p>Description: {{ object.description }}</p>
+    <p>Quantity: {{ object.quantity}}</p>
+    <p>Price: {{ object.price }}</p>
+    <p>Shipping cost: {{ object.shipping_cost }}</p>
+
+    <img src="{{ object.photo.url }}" alt="product_photo">
+    
+
+</body>
+</html>

@@ -40,6 +40,11 @@ class CommentsViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     
-class TagsViewSet(mixins.ListModelMixin):
+# class TagsViewSet(mixins.ListModelMixin):
 
-    
+#     queryset = Tags.objects.all()
+#     serializer_class = TagsSerializer
+
+#     def tag_search(self):
+
+

@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'ebooks',
     'quotes',
     'profiles',
+    'myapp',
     
 ]
 
@@ -158,6 +159,7 @@ MEDIA_ROOT = 'uploads'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
+        
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ]
